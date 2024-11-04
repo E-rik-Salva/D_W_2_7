@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body class="bg-gray-100 ">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-300 hadow-lg sticky z-10 top-0 w-full">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-2xl font-bold text-gray-800">Panas-Market</div>
+                <ul class="flex space-x-6 text-gray-600">
+                    <li><a href="#" class="hover:text-gray-800">Inicio</a></li>
+                    <li><a href="./pages/tienda.html" class="hover:text-gray-800">Tienda</a></li>
+                    <li><a href="#" class="hover:text-gray-800">Ofertas</a></li>
+                    <li><a href="#" class="hover:text-gray-800">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class=" w-full ">
+        <div class="w-full lg:h-[37rem] sm:h-[20rem]" style="background-image: url('./img/header.png'); background-repeat:no-repeat; background-size: cover; background-position: center;">
+            <div class="container mx-auto h-full flex justify-center items-center">
+                <div class="text-center text-white relative">
+                  <button  class="absolute -bottom-[8rem] -left-[19rem] inline-block px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg lg:-bottom-[13rem] lg:w-[12rem] lg:text-2xl lg:h-[4rem] lg:-left-[32rem]" id="btn-ex">NO TOCAR</button>
+                </div>
+            </div>
+        </div>
+    </section> 
+    
+    <section class="w-full h-full flex justify-center">
+
+        <div class="w-[12.5rem] h-[14rem] bg-black rounded-2xl mt-4 mr-4 relative  lg:w-[17rem] lg:h-[16rem]">
+            <div class="absolute -bottom-[0.9rem] left-[5rem]">
+            <div style="background-image: url('./img/electronicos\(main\).png');width: 310px;height: 190px;background-repeat: no-repeat;background-size: contain;" class="absolute -top-[14rem] -left-[6.6rem] lg:-top-[16rem] lg:-left-[2rem]"></div>
+            <p class="absolute -top-[7rem] -left-[4.7rem] text-3xl font-black text-gray-400 lg:-top-[7.5rem] lg:-left-[3rem] lg:text-4xl">Electronicos</p>
+            <button  class="absolute -top-[4rem] -left-[4rem] px-4 py-1 bg-blue-500 text-white font-semibold rounded-lg" id="btn-ex">Explorar</button>
+            </div>
+        </div>
+
+
+        <div class="w-[12.5rem] h-[14rem] bg-amber-200 rounded-2xl mt-4 mr-4 relative  lg:w-[17rem] lg:h-[16rem]">
+            <div class="absolute -bottom-[0.9rem] left-[5rem]">
+            <div style="background-image: url('./img/VeniceAI_m9UTd9y.png');width: 310px;height: 190px;background-repeat: no-repeat;background-size: contain;" class="absolute -top-[14rem] -left-[6.6rem] lg:-top-[16rem] lg:-left-[2rem]"></div>
+            <p class="absolute -top-[7rem] -left-[4.7rem] text-3xl font-black text-gray-400 lg:-top-[7.5rem] lg:-left-[3rem] lg:text-4xl">Bazar</p>
+            <button  class="absolute -top-[4rem] -left-[4rem] px-4 py-1 bg-blue-500 text-white font-semibold rounded-lg" id="btn-ex">Explorar</button>
+            </div>
+        </div>
+
+
+        <div class="w-[12.5rem] h-[14rem] bg-black rounded-2xl mt-4 mr-4 relative  lg:w-[17rem] lg:h-[16rem]">
+            <div class="absolute -bottom-[0.9rem] left-[5rem]">
+            <div style="background-image: url('./img/limpieza\(main\).jpeg');width: 310px;height: 190px;background-repeat: no-repeat;background-size: contain;" class="absolute -top-[14rem] -left-[6.6rem] lg:-top-[16rem] lg:-left-[2rem]"></div>
+            <p class="absolute -top-[7rem] -left-[4.7rem] text-3xl font-black text-gray-400 lg:-top-[7.5rem] lg:-left-[3rem] lg:text-4xl">Limpieza</p>
+            <button class="absolute -top-[4rem] -left-[4rem] px-4 py-1 bg-blue-500 text-white font-semibold rounded-lg" id="btn-ex"  >Explorar</button>
+            </div>
+        </div>
+        
+
+        </section>
+    
+    <!-- Información destacada -->
+    <section class="py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-8">¿Por qué elegirnos?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 shadow-lg rounded-lg">
+                    <img src="./img/envio laíepd.jpg" alt="Icono" class="mx-auto mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Envío rápido</h3>
+                    <p>Ofrecemos envío gratuito y rápido en todos nuestros productos.</p>
+                </div>
+                <div class="bg-white p-6 shadow-lg rounded-lg">
+                    <img src="https://via.placeholder.com/100" alt="Icono" class="mx-auto mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Atención al cliente 24/7</h3>
+                    <p>Nuestro equipo de soporte está disponible para ayudarte en todo momento.</p>
+                </div>
+                <div class="bg-white p-6 shadow-lg rounded-lg">
+                    <img src="https://via.placeholder.com/100" alt="Icono" class="mx-auto mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Garantía de devolución</h3>
+                    <p>Si no estás satisfecho, puedes devolver el producto sin problemas.</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-200 py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between">
+                <div>
+                    <h4 class="font-bold text-lg">Mi E-Commerce</h4>
+                    <p class="mt-2">Tu tienda de confianza para las mejores ofertas.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg">Enlaces útiles</h4>
+                    <ul class="mt-2 space-y-2">
+                        <li><a href="#" class="hover:underline">Política de Privacidad</a></li>
+                        <li><a href="#" class="hover:underline">Términos y Condiciones</a></li>
+                        <li><a href="#" class="hover:underline">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg">Síguenos</h4>
+                    <div class="mt-2 flex space-x-4">
+                        <a href="#"><img src="https://via.placeholder.com/24" alt="Facebook"></a>
+                        <a href="#"><img src="https://via.placeholder.com/24" alt="Instagram"></a>
+                        <a href="#"><img src="https://via.placeholder.com/24" alt="Twitter"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/index.js"></script>
+</body>
+</html>
